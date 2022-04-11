@@ -43,53 +43,73 @@ const SignupForm = props => {
       onSubmit={handleSubmit}
       className={styles.container}
     >
-      <div className={styles.inputContainer}>
-        <label htmlFor="name" className={styles.label}>Name</label>
-        <input
-          type="text"
-          autoComplete="off"
-          id="name"
-          value={name}
-          name="name"
-          onChange={handleChange}
-        />
-      </div>
-      <div className={styles.inputContainer}>
-        <label htmlFor="email" className={styles.label}>Email</label>
-        <input
-          type="text"
-          autoComplete="off"
-          id="email"
-          value={email}
-          name="email"
-          onChange={handleChange}
-        />
-      </div>
-      <div className={styles.inputContainer}>
-        <label htmlFor="password" className={styles.label}>Password</label>
-        <input
-          type="password"
-          autoComplete="off"
-          id="password"
-          value={password}
-          name="password"
-          onChange={handleChange}
-        />
-      </div>
-      <div className={styles.inputContainer}>
-        <label htmlFor="confirm" className={styles.label}>
-          Confirm Password
-        </label>
-        <input
-          type="password"
-          autoComplete="off"
-          id="confirm"
-          value={passwordConf}
-          name="passwordConf"
-          onChange={handleChange}
-        />
-      </div>
-      <div className={styles.inputContainer}>
+      <table className={styles.inputContainer}>
+        <tbody>
+          <tr>
+            <td>
+              <label htmlFor="name" className={styles.label}>Name</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                autoComplete="off"
+                id="name"
+                value={name}
+                name="name"
+                onChange={handleChange}
+              />
+            </td>
+          </tr>
+          <tr >
+            <td>
+              <label htmlFor="email" className={styles.label}>Email</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                autoComplete="off"
+                id="email"
+                value={email}
+                name="email"
+                onChange={handleChange}
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label htmlFor="password" className={styles.label}>Password</label>
+            </td>
+            <td>
+              <input
+                type="password"
+                autoComplete="off"
+                id="password"
+                value={password}
+                name="password"
+                onChange={handleChange}
+              />
+            </td>
+          </tr>
+          <tr>
+            <td >
+              <label htmlFor="confirm" className={styles.label}>
+                Confirm Password
+              </label>
+            </td>
+            <td>
+              <input
+                type="password"
+                autoComplete="off"
+                id="confirm"
+                value={passwordConf}
+                name="passwordConf"
+                onChange={handleChange}
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div>
         <button disabled={isFormInvalid()} className={styles.button}>
           Sign Up
         </button>

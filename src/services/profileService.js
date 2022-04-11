@@ -4,6 +4,7 @@ const BASE_URL = `${process.env.REACT_APP_API_URL}/api/profiles`
 
 async function getAllProfiles() {
   const res = await fetch(BASE_URL, {
+    method:"GET",
     headers: { Authorization: `Bearer ${tokenService.getToken()}` },
   })
   return await res.json()
