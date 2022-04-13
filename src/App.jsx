@@ -19,7 +19,7 @@ import AppDetails from './pages/AppDetails/AppDetails'
 function App() {
   const navigate = useNavigate()
   const [apps, setApps] = useState([])
-  const [app, setApp] = useState([])
+  const [app] = useState([])
   const [user, setUser] = useState(authService.getUser())
   console.log(user)
 

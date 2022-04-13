@@ -20,18 +20,18 @@ const AppForm = (props) => {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  // useEffect(() => {
-  //   const fetchOne = async () => {
-  //     const data = await getOne(id)
-  //     setForm({
-  //       id: data.app.id,
-  //       name: data.app.name,
-  //       description: data.app.description,
-  //     })
-  //   }
-  //   id && fetchOne()
-  //   return () => setForm({})
-  // }, [id])
+  useEffect(() => {
+    const fetchOne = async () => {
+      const data = await getOne(id)
+      setForm({
+        id: data.app.id,
+        name: data.app.name,
+        description: data.app.description,
+      })
+    }
+    id && fetchOne()
+    return () => setForm({})
+  }, [id])
 
   return (  
     <>

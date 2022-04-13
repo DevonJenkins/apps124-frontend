@@ -22,7 +22,7 @@ const AppDetails = ({ user }) => {
       // set Badge when available 
     }
     fetchOne()
-  }, [id])
+  }, [id, app])
   
   if (!app) return <h1>Loading</h1>
   
