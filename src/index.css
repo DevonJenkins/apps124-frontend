@@ -8,6 +8,8 @@ body {
   background: black;
   color: darkgreen;
   text-align: center;
+  align-items: center;
+  font-family: monospace;
 }
 
 code {
@@ -33,7 +35,29 @@ li:hover{
   color: black;
 }
 
+button{
+  color: green;
+  background: rgb(62, 61, 61);
+}
+
 a{
   color: green;
   text-decoration: none;
+}
+
+input{
+  background: rgb(87, 87, 87) ;
+}
+
+::placeholder{
+  color: green;
+}
+
+.app-link:hover{
+  color: white;
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
 }

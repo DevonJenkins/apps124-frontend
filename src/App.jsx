@@ -13,11 +13,13 @@ import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
 //Services
 import * as authService from './services/authService'
 import * as appService from './services/appService'
+import AppDetails from './pages/AppDetails/AppDetails'
 
 
 function App() {
   const navigate = useNavigate()
   const [apps, setApps] = useState([])
+  const [app, setApp] = useState([])
   const [user, setUser] = useState(authService.getUser())
   console.log(user)
 
@@ -81,6 +83,15 @@ function App() {
           element = {
             <ProtectedRoute user={user}>
               < AppList user={user} apps={apps} />
+            </ProtectedRoute>
+          }
+        />
+        <Route 
+          path="/apps/:id"
+          element = {
+
+            <ProtectedRoute user={user}>
+              <AppDetails user={user} app={app} />
             </ProtectedRoute>
           }
         />

@@ -13,7 +13,7 @@ const AppForm = (props) => {
     e.preventDefault()
     //id ? props.updateApp(form) : 
     props.addApp(form)
-    navigate(`/apps/new`)
+    navigate(`/apps`)
   }
 
   const handleChange = (e) => {
@@ -38,6 +38,7 @@ const AppForm = (props) => {
       <section className='form-container'>
         <form onSubmit={handleSubmit}>
           <AppInput form={form} handleChange={handleChange} /> 
+          <br />
           <button type='submit' className='btn-submit'>Submit</button>
         </form>
       </section>
