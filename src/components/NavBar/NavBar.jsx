@@ -4,17 +4,24 @@ const NavBar = ({ user, handleLogout }) => {
   return (
     <>
       {user ?
-        <nav>
-          <ul>
-            {/* do I want this here? */}
-            <h1 className='nav-el'>{user.name}</h1>
-            <li className='nav-el'><Link to="/">Home</Link></li>
-            {/* this is a stretch goal item. Uncomment if you have time to work out profile show functionality before presentation */}
-            {/* <li className='nav-el'><Link to="/profiles">Profiles</Link></li> */} 
-            <li> <NavLink to='/apps/new'> Add an app</NavLink> </li>
-            <li> <NavLink to='/apps'> All Apps </NavLink> </li>
-            <li className='nav-el'><Link to="" onClick={handleLogout}>LOG OUT</Link></li>
-          </ul>
+        <nav className='navbar'>
+          <div className='dropdown'>
+            {/* <button className="dropbtn">Dropdown</button> */}
+            <ul>
+
+              <li>
+                launch terminal
+                <ul className='dropdown-content'>
+                  <li className='nav-el'><Link to="/"> ~ cd /apps124</Link></li>
+                  {/* this is a stretch goal item. Uncomment if you have time to work out profile show functionality before presentation */}
+                  {/* <li className='nav-el'><Link to="/profiles">Profiles</Link></li> */} 
+                  <li> <NavLink to='/apps/new'> ~ cd apps124/add-an-app</NavLink> </li>
+                  <li> <NavLink to='/apps'> ~ cd /apps124/all-apps </NavLink> </li>
+                  <li className='nav-el'><Link to="" onClick={handleLogout}>LOG OUT</Link></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </nav>
       :
         <nav>
@@ -27,6 +34,7 @@ const NavBar = ({ user, handleLogout }) => {
           </ul>
         </nav>
       }
+
     </>
   )
 }

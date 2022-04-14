@@ -93,6 +93,22 @@ const AppInput = ({form, handleChange}) => {
               />
             </td>
           </tr>
+          <tr>
+            <td>
+              <label htmlFor="author">Author(s)</label>
+            </td>
+            <td>
+              <input
+                value={form.author ? form.author : ''} 
+                onChange={handleChange} 
+                id="author"
+                required name="author" 
+                type="text" 
+                placeholder="author(s)" 
+                autoComplete="off"
+              />
+            </td>
+          </tr>
         </tbody>
       </table>
     </>

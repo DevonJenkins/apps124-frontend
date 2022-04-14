@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: black;
@@ -14,17 +14,19 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
 }
 
 ul{
   list-style: none;
   margin: 19px;
+
 }
 
 li{
-  display: inline;
+  display: block;
   border: solid green 1px;
+  background: black;
   padding: 11px;
   margin-left: 5px;
 }
@@ -33,7 +35,39 @@ li:hover{
   border: solid white 1px;
   background: grey;
   color: black;
+  cursor: pointer;
 }
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
 
 button{
   color: green;
@@ -46,7 +80,7 @@ a{
 }
 
 input{
-  background: rgb(87, 87, 87) ;
+  background: rgb(12, 11, 11) ;
   color: green;
 }
 
@@ -62,3 +96,6 @@ table{
   margin-left: auto;
   margin-right: auto;
 }
+
+
+

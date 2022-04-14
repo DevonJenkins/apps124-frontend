@@ -28,7 +28,8 @@ const AppForm = (props) => {
         name: data.app.name,
         description: data.app.description,
         type: data.app.type,
-        photo: data.app.photo
+        photo: data.app.photo,
+        author: data.app.author,
       })
     }
     id && fetchOne()

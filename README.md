@@ -1,8 +1,7 @@
 # *Apps124* 
----
 # *Description* 
 
-Apps124, named after SEI 1/24/22, is a platform for budding software engineers to showcase their growth by submitting projects that illustrate their strengths and talents. We welcome all software engineers, especially those in the SEI 1/24/22 cohort, to submit their own projects and show off their skills. 
+Apps124, named after SEI 1/24/22, is a platform for budding software engineers to showcase their growth by submitting projects that illustrate their strengths and talents. We welcome all programmers, especially those in the SEI 1/24/22 cohort, to submit their own projects and show off their skills. 
 ---
 # *Get Started*
 
@@ -32,7 +31,7 @@ Click [here](https://main--apps124.netlify.app/) to try out the app.
 # *Ice Box* :cold_face:
   - Admin features
   - Cloudinary implementation 
----
+  - Character counter on description
 # *Technologies used*
 ![HTML5](https://camo.githubusercontent.com/a4214d1dd1bec82b1cb472c241c12d288035914037b0a1783de4e4254c6330ea/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d48544d4c352d77686974653f7374796c653d666f722d7468652d6261646765266c6f676f3d68746d6c35)
 ![CSS3](https://camo.githubusercontent.com/598d38ad457a53f406013e61bd9635a7e6d082cfae8c0ff395472829c7060858/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d435353332d77686974653f7374796c653d666f722d7468652d6261646765266c6f676f3d63737333266c6f676f436f6c6f723d313537324236)
@@ -55,8 +54,16 @@ Click [here](https://main--apps124.netlify.app/) to try out the app.
 
 ---
 # *Screenshots*
+
+screenshot
+
+
+
 ---
 # *Credits* 
+
 [Dave Collis](https://github.com/dcollis92#technologies--tools) for the readme badges
+
 [Devon Jenkins](https://www.linkedin.com/in/dvnjnkns/) for the Logo/favicon
+
 ---
