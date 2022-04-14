@@ -27,6 +27,8 @@ const AppForm = (props) => {
         id: data.app.id,
         name: data.app.name,
         description: data.app.description,
+        type: data.app.type,
+        photo: data.app.photo
       })
     }
     id && fetchOne()

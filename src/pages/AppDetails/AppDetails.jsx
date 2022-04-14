@@ -29,9 +29,13 @@ const AppDetails = ({ user }) => {
     <>
       <section className="app-container">
         <div>
+          <a href={app.link}>
+            <img src={app.photo} alt="" />
+          </a>
           <h1>{app.name}</h1>
+          <p>{app.appType}</p>
           <p>{app.description}</p>
-          <p>This is an app</p>
+
           <br />
           <AppActions app={app} user={user} />
         </div>
