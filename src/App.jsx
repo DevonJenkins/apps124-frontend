@@ -22,7 +22,7 @@ import ProfileDetails from './pages/Profiles/ProfileDetails'
 function App() {
   const navigate = useNavigate()
   const [apps, setApps] = useState([])
-  const [app] = useState([])
+  const [app, setApp] = useState([])
   const [profile, setProfile] = useState([])
   const [user, setUser] = useState(authService.getUser())
   //console.log(user)
@@ -46,12 +46,11 @@ function App() {
     setApps([...apps, app])
   }
 
-  // const updateApp = async (appData) => {
-  //   const updateApp = await appService.update(appData)
-  //   setApps(apps.map((app) => (
-  //     app.id === updateApp.id ? updateApp : app
-  //   )))
-  // }
+  const getApp = async (appData) => {
+    const app = await appService.getOne(appData)
+    setApp([app])
+  }
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -77,7 +76,7 @@ function App() {
         />
         <Route
           path="/profiles"
-          element={user ? <Profiles /> : <Navigate to="/login" profile={profile} />}
+          element={user ? <Profiles/> : <Navigate to="/login" profile={profile} />}
         />
         <Route
           path="/profiles/:id"
@@ -101,9 +100,8 @@ function App() {
         <Route 
           path="/apps/:id"
           element = {
-
             <ProtectedRoute user={user}>
-              <AppDetails user={user} app={app} />
+              <AppDetails user={user} app={app} setApp={setApp} getApp={getApp} />
             </ProtectedRoute>
           }
         />

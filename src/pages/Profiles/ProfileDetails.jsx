@@ -9,29 +9,33 @@ import * as profileService from "../../services/profileService"
 //import badges here 
 
 
-const ProfileDetails = ({ user }) => {
+const ProfileDetails = ( user, props) => {
   const { id } = useParams()
   const [profile, setProfile] = useState()
-  console.log(profile)
-
+  console.log(props.profile)
+  
   useEffect(() => {
+    console.log('line17: ', profile)
     const fetchOne = async () => {
-      //console.log(profile)
       profileService.getOneProfile(id)
       .then(profile => setProfile(profile))
     }
     fetchOne()
   }, [id])
-
+  
   return (  
     <>
     <h1>This is the profile details page</h1>
     <h1>
-      {user.name} 
+      user= {user.name} <br />
+      userid= {user.id} <br />
+      {console.log(props.profile)}
+      {console.log(profile)}
     </h1>
-      <h3>
-        #{user.id} 
-      </h3>
+    <h1>profile info</h1>
+    
+      {props.profile}
+      {profile.id}
     </>
   );
 }

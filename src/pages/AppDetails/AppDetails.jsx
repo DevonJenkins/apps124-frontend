@@ -2,25 +2,29 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 //Services
-import { getOne } from '../../services/appService'
+import * as appService from '../../services/appService'
+
 
 //Components
 
-const AppDetails = ({ user }) => {
-  const {id} = useParams
+const AppDetails = ( props ) => {
+  const {id} = useParams()
   const [app, setApp] = useState(null)
-
+  console.log(props)
+  console.log(app)
+  console.log(appService.getOne.app)
 
   useEffect(() => {
-    console.log(app)
-    const fetchOne = async () => {
-      const data = await getOne(id)
-      console.log(app)
+    const fetchOne = async (app) => {
+      console.log(id)
+      const data = await appService.getOne(id)
+      console.log(data.app)
       setApp(data.app)
+      //.then(app => setApp(data.app))
       // set Badge when available 
     }
     fetchOne()
-  }, [id, app])
+  }, [id])
 
   // useEffect(() => {
   //   const fetchOne = async () => {
@@ -37,7 +41,7 @@ const AppDetails = ({ user }) => {
     <>
       <section className="app-container">
         <div>
-          <h1>{app}</h1>
+          <h1>{app.name}</h1>
           <p>{app.description}</p>
         </div>
       </section>
