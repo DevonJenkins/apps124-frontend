@@ -21,6 +21,9 @@ const NavBar = ({ user, handleLogout }) => {
           <ul>
             <li><Link to="/login">Log In</Link></li>
             <li><Link to="/signup">Sign Up</Link></li>
+            <li> 
+              <NavLink to='/apps'> All Apps </NavLink>
+            </li>
           </ul>
         </nav>
       }
