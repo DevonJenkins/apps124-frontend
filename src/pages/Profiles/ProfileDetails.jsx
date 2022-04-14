@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
-import * as profileService from "../../services/profileService"
 
 //Services
-import { getOneProfile } from "../../services/profileService";
+import * as profileService from "../../services/profileService"
+
 
 //components
 //import badges here 
