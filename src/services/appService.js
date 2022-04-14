@@ -36,6 +36,18 @@ export const getOne = async (id) => {
   }
 }
 
+export const deleteOneApp = async (id) => {
+  try {
+    const res = await fetch(`${BASE_URL}${id}`, {
+      method: "DELETE",
+      headers: { 'Authorization': `Bearer ${tokenService.getToken()}` }
+    })
+    return await res.json()
+  } catch (error) {
+    throw error
+  }
+}
+
 export const update = async (app) => {
   // try {
   //   const res = await fetch(`${BASE_URL}${app.id}`, {

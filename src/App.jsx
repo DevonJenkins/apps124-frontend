@@ -17,6 +17,7 @@ import * as profileService from './services/profileService'
 
 import AppDetails from './pages/AppDetails/AppDetails'
 import ProfileDetails from './pages/Profiles/ProfileDetails'
+import Confirmation from './pages/Confirmations/Confirmation'
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
   const [app, setApp] = useState([])
   const [profile, setProfile] = useState([])
   const [user, setUser] = useState(authService.getUser())
-  //console.log(user)
+
 
   const handleLogout = () => {
     authService.logout()
@@ -49,6 +50,11 @@ function App() {
   const getApp = async (appData) => {
     const app = await appService.getOne(appData)
     setApp([app])
+  }
+
+  const deleteApp = async (id) => {
+    await appService.deleteOneApp(id)
+    setApps(apps.filter(app => app.id !== parseInt(id)))
   }
 
 
@@ -102,6 +108,16 @@ function App() {
           element = {
             <ProtectedRoute user={user}>
               <AppDetails user={user} app={app} setApp={setApp} getApp={getApp} />
+            </ProtectedRoute>
+          }
+        />
+        <Route 
+          path="/apps/:id/confirmation"
+          element = {
+            <ProtectedRoute 
+              user={user}>
+              < Confirmation 
+                user={user} app={app} deleteApp={deleteApp}/>
             </ProtectedRoute>
           }
         />

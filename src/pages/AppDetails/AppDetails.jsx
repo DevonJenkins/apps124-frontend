@@ -6,13 +6,12 @@ import * as appService from '../../services/appService'
 
 
 //Components
+import AppActions from "../AppActions/AppDelete";
 
-const AppDetails = ( props ) => {
+
+const AppDetails = ({ user }) => {
   const {id} = useParams()
   const [app, setApp] = useState(null)
-  console.log(props)
-  console.log(app)
-  console.log(appService.getOne.app)
 
   useEffect(() => {
     const fetchOne = async (app) => {
@@ -20,20 +19,9 @@ const AppDetails = ( props ) => {
       const data = await appService.getOne(id)
       console.log(data.app)
       setApp(data.app)
-      //.then(app => setApp(data.app))
-      // set Badge when available 
     }
     fetchOne()
   }, [id])
-
-  // useEffect(() => {
-  //   const fetchOne = async () => {
-  //     const data = await getOne(id)
-  //     setApp(data.app)
-     // setAvailableApps(data.available_apps)
-  //   }
-  //   fetchOne()
-  // }, [id])
   
   if (!app) return <h1>Loading</h1>
   
@@ -43,6 +31,9 @@ const AppDetails = ( props ) => {
         <div>
           <h1>{app.name}</h1>
           <p>{app.description}</p>
+          <p>This is an app</p>
+          <br />
+          <AppActions app={app} user={user} />
         </div>
       </section>
     </>
