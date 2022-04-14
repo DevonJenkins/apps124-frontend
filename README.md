@@ -8,7 +8,7 @@ Apps124, named after SEI 1/24/22, is a platform for budding software engineers t
 
 Click [here](https://trello.com/b/bDa2ggf9/apps124) to view my planning materials. 
 
-Click [here](https://main--apps124.netlify.app/) to try it out the app.   
+Click [here](https://main--apps124.netlify.app/) to try out the app.   
 
 # *Version 1.0.0 (MVP)*
 ##  *Tags*
@@ -16,15 +16,16 @@ Click [here](https://main--apps124.netlify.app/) to try it out the app.
     (AAU)- As a user
 
 ## *User Stories*   
-    - AAG, I want to be able to view all apps that have been added, so that I can see what others  have made.
-    - AAG, I want to be able to log in so that I become a user and add my own apps
+    - AAG, I want to be able to view all apps that have been added, so that I can see what others have made.
+    - AAG, I want to be able to log in so that I become a user and add my own apps.
     - AAU, I want to be able to add apps that I have created so that myself and other visitors can view them. 
     - AAU, I want to be able to delete apps that I have added so that I can remove items that I don't want associated with my profile. 
 ---
 # *Stretch Goals*
     - AAU I want to be able to view all profiles and profile details so that I can learn more about other users. 
+    - AAU, when view the profile details page, I want to see all of the apps that have been added by that profile in chronological order by date created. 
     - AAU, I want to be able to update my profile so that I can change my name and profile photo. 
-    - AAU, I want to be able to delete my profile so that I have control over whether or not my profile exists within the app
+    - AAU, I want to be able to delete my profile so that I have control over whether or not my profile exists within the app.
     - AAU, I want to be able to update my app so that I can change the images and data associated with it as the app changes. 
   
 ---
