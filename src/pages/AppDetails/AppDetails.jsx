@@ -6,8 +6,6 @@ import { getOne } from '../../services/appService'
 
 //Components
 
-
-
 const AppDetails = ({ user }) => {
   const {id} = useParams
   const [app, setApp] = useState(null)
@@ -23,6 +21,15 @@ const AppDetails = ({ user }) => {
     }
     fetchOne()
   }, [id, app])
+
+  // useEffect(() => {
+  //   const fetchOne = async () => {
+  //     const data = await getOne(id)
+  //     setApp(data.app)
+     // setAvailableApps(data.available_apps)
+  //   }
+  //   fetchOne()
+  // }, [id])
   
   if (!app) return <h1>Loading</h1>
   

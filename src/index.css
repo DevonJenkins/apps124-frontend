@@ -47,6 +47,7 @@ a{
 
 input{
   background: rgb(87, 87, 87) ;
+  color: green;
 }
 
 ::placeholder{

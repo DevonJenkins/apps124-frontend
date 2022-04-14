@@ -13,15 +13,19 @@ import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
 //Services
 import * as authService from './services/authService'
 import * as appService from './services/appService'
+import * as profileService from './services/profileService'
+
 import AppDetails from './pages/AppDetails/AppDetails'
+import ProfileDetails from './pages/Profiles/ProfileDetails'
 
 
 function App() {
   const navigate = useNavigate()
   const [apps, setApps] = useState([])
   const [app] = useState([])
+  const [profile, setProfile] = useState([])
   const [user, setUser] = useState(authService.getUser())
-  console.log(user)
+  //console.log(user)
 
   const handleLogout = () => {
     authService.logout()
@@ -31,6 +35,10 @@ function App() {
 
   const handleSignupOrLogin = () => {
     setUser(authService.getUser())
+  }
+
+  const handleGetProfile = () => {
+    setProfile(profileService.getOneProfile())
   }
 
   const addApp = async (appData) => {
@@ -69,7 +77,11 @@ function App() {
         />
         <Route
           path="/profiles"
-          element={user ? <Profiles /> : <Navigate to="/login" />}
+          element={user ? <Profiles /> : <Navigate to="/login" profile={profile} />}
+        />
+        <Route
+          path="/profiles/:id"
+          element={user ? <ProfileDetails user={user} profile={profile} handleGetProfile={handleGetProfile} /> : <Navigate to="/login" />}
         />
         <Route 
           path="/apps/new" element={
