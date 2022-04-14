@@ -6,9 +6,11 @@ const NavBar = ({ user, handleLogout }) => {
       {user ?
         <nav>
           <ul>
-            <li className='nav-el'>{user.name}</li>
+            {/* do I want this here? */}
+            <h1 className='nav-el'>{user.name}</h1>
             <li className='nav-el'><Link to="/">Home</Link></li>
-            <li className='nav-el'><Link to="/profiles">Profiles</Link></li>
+            {/* this is a stretch goal item. Uncomment if you have time to work out profile show functionality before presentation */}
+            {/* <li className='nav-el'><Link to="/profiles">Profiles</Link></li> */} 
             <li> <NavLink to='/apps/new'> Add an app</NavLink> </li>
             <li> <NavLink to='/apps'> All Apps </NavLink> </li>
             <li className='nav-el'><Link to="" onClick={handleLogout}>LOG OUT</Link></li>

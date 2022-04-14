@@ -107,7 +107,7 @@ function App() {
           path="/apps/:id"
           element = {
             <ProtectedRoute user={user}>
-              <AppDetails user={user} app={app} setApp={setApp} getApp={getApp} />
+              <AppDetails user={user} app={app} />
             </ProtectedRoute>
           }
         />
