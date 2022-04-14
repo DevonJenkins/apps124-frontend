@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const AppList = ({ apps }) => {
-  const [app, setApp] = useState([])
+  const [ setApp ] = useState([])
   return ( 
     <>
       <h1>Hello. This is the apps list</h1>

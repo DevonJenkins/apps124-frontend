@@ -21,7 +21,7 @@ const ProfileDetails = ( user, props) => {
       .then(profile => setProfile(profile))
     }
     fetchOne()
-  }, [id])
+  }, [id, profile])
   
   return (  
     <>
