@@ -23,7 +23,8 @@ const AppInput = ({form, handleChange}) => {
               <label htmlFor="description">Description</label>
             </td>
             <td>
-              <input
+              <textarea
+                rows={2}
                 value={form.description ? form.description : ''} 
                 onChange={handleChange} 
                 id="description"
@@ -44,21 +45,12 @@ const AppInput = ({form, handleChange}) => {
                       onChange={handleChange}
                       type="text"
               >
+                <option value="" disabled selected hidden>select app type</option>
                 <option value="Game">Game</option>
                 <option value="MEN-stack">MEN-stack</option>
                 <option value="MERN-stack">MERN-stack</option>
                 <option value="Flask">Flask </option>
-
               </select>
-              {/* <input
-                value={form.description ? form.description : ''} 
-                onChange={handleChange} 
-                id="description"
-                required name="description" 
-                type="text" 
-                placeholder="Description" 
-                autoComplete="off"
-              /> */}
             </td>
           </tr>
           <tr>

@@ -98,9 +98,7 @@ function App() {
         <Route
           path="/apps"
           element = {
-            <ProtectedRoute user={user}>
               < AppList user={user} apps={apps} />
-            </ProtectedRoute>
           }
         />
         <Route 

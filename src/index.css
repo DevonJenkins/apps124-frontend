@@ -79,9 +79,17 @@ a{
   text-decoration: none;
 }
 
-input{
+select, input, option, textarea {
   background: rgb(12, 11, 11) ;
   color: green;
+  width: 145px;
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+  border: 1px solid black;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 ::placeholder{
@@ -97,5 +105,8 @@ table{
   margin-right: auto;
 }
 
-
+img{
+  height: 350px;
+  width: 350px;
+}
 
