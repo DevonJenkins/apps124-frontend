@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import styles from './SignupForm.module.css'
 import * as authService from '../../services/authService'
 
 const SignupForm = props => {
@@ -41,13 +40,12 @@ const SignupForm = props => {
     <form
       autoComplete="off"
       onSubmit={handleSubmit}
-      className={styles.container}
     >
-      <table className={styles.inputContainer}>
+      <table>
         <tbody>
           <tr>
             <td>
-              <label htmlFor="name" className={styles.label}>Name</label>
+              <label htmlFor="name" >Name</label>
             </td>
             <td>
               <input
@@ -62,7 +60,7 @@ const SignupForm = props => {
           </tr>
           <tr >
             <td>
-              <label htmlFor="email" className={styles.label}>Email</label>
+              <label htmlFor="email">Email</label>
             </td>
             <td>
               <input
@@ -77,7 +75,7 @@ const SignupForm = props => {
           </tr>
           <tr>
             <td>
-              <label htmlFor="password" className={styles.label}>Password</label>
+              <label htmlFor="password" >Password</label>
             </td>
             <td>
               <input
@@ -92,7 +90,7 @@ const SignupForm = props => {
           </tr>
           <tr>
             <td >
-              <label htmlFor="confirm" className={styles.label}>
+              <label htmlFor="confirm">
                 Confirm Password
               </label>
             </td>
@@ -110,7 +108,7 @@ const SignupForm = props => {
         </tbody>
       </table>
       <div>
-        <button disabled={isFormInvalid()} className={styles.button}>
+        <button disabled={isFormInvalid()}>
           Sign Up
         </button>
         <Link to="/">
