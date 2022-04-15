@@ -9,10 +9,26 @@ const NavBar = ({ user, handleLogout }) => {
             <ul>
               <li>launch terminal
                 <ul className='dropdown-content'>
-                  <li className='nav-el'><Link to="/"> ~ cd /apps124</Link></li>
-                  <li> <NavLink to='/apps/new'> ~ cd apps124/add-an-app</NavLink> </li>
-                  <li> <NavLink to='/apps'> ~ cd /apps124/all-apps </NavLink> </li>
-                  <li className='nav-el'><Link to="" onClick={handleLogout}>~ cd /apps124/log-out</Link></li>
+                  <NavLink to="/"> 
+                    <li>
+                      ~ cd /apps124 
+                    </li>
+                  </NavLink>
+                  <NavLink to='/apps/new'> 
+                    <li>
+                      ~ cd apps124/add-an-app
+                    </li> 
+                  </NavLink>
+                  <NavLink to='/apps'> 
+                      <li>
+                        ~ cd /apps124/all-apps 
+                      </li>
+                    </NavLink>
+                  <NavLink to="" onClick={handleLogout}> 
+                    <li>
+                      ~ cd /apps124/log-out
+                    </li>
+                  </NavLink>
                 </ul>
               </li>
             </ul>
@@ -24,10 +40,18 @@ const NavBar = ({ user, handleLogout }) => {
             <ul>
               <li>launch terminal
                 <ul className='dropdown-content'>
-                  <li><Link to="/login">~ cd /log-in</Link></li>
-                  <li><Link to="/signup">~ cd /signup</Link></li>
+                  <NavLink to="/login">
+                    <li>
+                      ~ cd /log-in
+                    </li>
+                  </NavLink>
+                  <NavLink to="/signup">~ cd /signup</NavLink>
                   <li> 
-                    <NavLink to='/apps'>~ cd /view-apps </NavLink>
+                    <NavLink to='/apps'>
+                      <li>
+                        ~ cd /view-apps 
+                      </li>
+                      </NavLink>
                   </li>
                 </ul>
               </li>
@@ -35,7 +59,6 @@ const NavBar = ({ user, handleLogout }) => {
           </div>
         </nav>
       }
-
     </>
   )
 }
