@@ -17,15 +17,14 @@ code {
   monospace;
 }
 
-ul{
-  list-style: none;
-}
-
 li{
+  list-style: none;
   display: block;
   border: solid green 1px;
   background: black;
   padding: 11px;
+  width: 87%;
+  margin: 0 auto;
 }
 
 li:hover{
@@ -41,7 +40,7 @@ ul li ul {
   position: absolute;
   transition: all 0.5s ease;
   margin-top: 0.8rem;
-  left: 0;
+  left: 1;
   display: none;
 }
 

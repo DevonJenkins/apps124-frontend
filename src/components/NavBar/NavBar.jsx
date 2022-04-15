@@ -12,7 +12,7 @@ const NavBar = ({ user, handleLogout }) => {
                   <li className='nav-el'><Link to="/"> ~ cd /apps124</Link></li>
                   <li> <NavLink to='/apps/new'> ~ cd apps124/add-an-app</NavLink> </li>
                   <li> <NavLink to='/apps'> ~ cd /apps124/all-apps </NavLink> </li>
-                  <li className='nav-el'><Link to="" onClick={handleLogout}>LOG OUT</Link></li>
+                  <li className='nav-el'><Link to="" onClick={handleLogout}>~ cd /apps124/log-out</Link></li>
                 </ul>
               </li>
             </ul>
@@ -24,10 +24,10 @@ const NavBar = ({ user, handleLogout }) => {
             <ul>
               <li>launch terminal
                 <ul className='dropdown-content'>
-                  <li><Link to="/login">Log In</Link></li>
-                  <li><Link to="/signup">Sign Up</Link></li>
+                  <li><Link to="/login">~ cd /log-in</Link></li>
+                  <li><Link to="/signup">~ cd /signup</Link></li>
                   <li> 
-                    <NavLink to='/apps'> All Apps </NavLink>
+                    <NavLink to='/apps'>~ cd /view-apps </NavLink>
                   </li>
                 </ul>
               </li>
