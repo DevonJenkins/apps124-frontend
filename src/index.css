@@ -109,4 +109,35 @@ img{
   height: 350px;
   width: 350px;
 }
+.container:hover .image {
+  opacity: 0.3;
+}
 
+.container:hover .middle {
+  opacity: 1;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text {
+  background-color: #171918;
+  color: green;
+  border: solid green 1px;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+button:hover{
+  cursor: pointer;
+  color: white; 
+  border: white solid 1px;
+}
