@@ -19,8 +19,6 @@ code {
 
 ul{
   list-style: none;
-  margin: 19px;
-
 }
 
 li{
@@ -28,7 +26,6 @@ li{
   border: solid green 1px;
   background: black;
   padding: 11px;
-  margin-left: 5px;
 }
 
 li:hover{
@@ -72,6 +69,8 @@ ul li ul:hover {
 button{
   color: green;
   background: rgb(62, 61, 61);
+  border: black solid 1px;
+  padding: 5px;
 }
 
 a{
