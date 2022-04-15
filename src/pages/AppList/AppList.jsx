@@ -11,8 +11,6 @@ const AppList = ({ apps }) => {
           < Link 
               to={`/apps/${app.id}`}
               app={app}
-
-              
               className="app-link"
             >
             {app.name}
