@@ -37,9 +37,9 @@ const AppDetails = ({ user }) => {
             </div>
           </a>
           <h1>{app.name}</h1>
+          <p>by {app.author}</p>
           <p>{app.appType}</p>
           <p>{app.description}</p>
-          <p>by {app.author}</p>
           <br />
           <AppActions app={app} user={user} />
         </div>
