@@ -45,7 +45,7 @@ const AppInput = ({form, handleChange}) => {
                       onChange={handleChange}
                       type="text"
               >
-                <option value="" disabled selected hidden>select app type</option>
+                {/* <option value="" disabled selected hidden>select app type</option> */}
                 <option value="Game">Game</option>
                 <option value="MEN-stack">MEN-stack</option>
                 <option value="MERN-stack">MERN-stack</option>

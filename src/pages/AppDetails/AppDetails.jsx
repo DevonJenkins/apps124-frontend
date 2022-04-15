@@ -12,7 +12,7 @@ import AppActions from "../AppActions/AppDelete";
 const AppDetails = ({ user }) => {
   const {id} = useParams()
   const [app, setApp] = useState(null)
-  const imageUrl = app?.photo ? app.photo : 'https://i0.wp.com/sbcf.fr/wp-content/uploads/2018/03/sbcf-default-avatar.png?w=300&ssl=1'
+
 
   useEffect(() => {
     const fetchOne = async (app) => {
@@ -31,7 +31,7 @@ const AppDetails = ({ user }) => {
       <section className="app-container">
         <div>
           <a href={app.link} className='container' target="_blank" rel="noreferrer" >
-            <img src={imageUrl} alt="" className="image"/>
+            <img src={app.photo} alt="" className="image"/>
             <div className="middle">
               <div className="text">{app.name}</div>
             </div>
