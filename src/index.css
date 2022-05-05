@@ -140,6 +140,11 @@ button:hover{
   border: white solid 1px;
 }
 
+input:-webkit-autofill{
+  color: rgb(25, 107, 19);
+  
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
