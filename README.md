@@ -23,7 +23,7 @@ Click [here](https://main--apps124.netlify.app/) to try out the app.
 # *Stretch Goals*
  - [ ] AAU I want to be able to view all profiles and profile details so that I can learn more about other users. 
  - [ ] AAU, when view the profile details page, I want to see all of the apps that have been added by that profile in chronological order by date created. 
-- [ ]AAU, I want to be able to update my profile so that I can change my name and profile photo. 
+- [ ] AAU, I want to be able to update my profile so that I can change my name and profile photo. 
 - [ ] AAU, I want to be able to delete my profile so that I have control over whether or not my profile exists within the app.
 - [ ] AAU, I want to be able to update my app so that I can change the images and data associated with it as the app changes. 
   
@@ -42,7 +42,7 @@ Click [here](https://main--apps124.netlify.app/) to try out the app.
 ![Flask](https://camo.githubusercontent.com/47dc66a0337d1b59e36d6b5f34706eb85ba18987d6f64ba57d2f873960cddb58/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d466c61736b2d77686974653f7374796c653d666f722d7468652d6261646765266c6f676f3d466c61736b266c6f676f436f6c6f723d626c61636b)
 ![PostgreSQL](https://camo.githubusercontent.com/c13050378d5a7fa42f4bdbf36d5de804de28b7304803986ede69b9c5bcb157a4/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d506f737467726553514c2d77686974653f7374796c653d666f722d7468652d6261646765266c6f676f3d706f737467726573716c)
 ![React](https://camo.githubusercontent.com/59117e6c3176fc05167b9e514092ffb14757ca40265df8790047609916d00c19/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d52656163742d77686974653f7374796c653d666f722d7468652d6261646765266c6f676f3d5265616374266c6f676f436f6c6f723d626c7565)
-![Node.js](https://camo.githubusercontent.com/4b321c2ed42f791bf9700b1ba275b5ce69e042ce86c3a7f765e4a5402ab927c9/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4e6f64652e4a532d77686974653f7374796c653d666f722d7468652d6261646765266c6f676f3d4e6f64652e6a73)
+
 
 ![Git](https://camo.githubusercontent.com/86719e1012bad6a070daff5a56073f41fc83ae507d1e01cca50dcbd3ac7103c3/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4769742d77686974653f7374796c653d666f722d7468652d6261646765266c6f676f3d676974)
 ![Github](https://camo.githubusercontent.com/1078bb690d88d5fc3405a53156d84e2c50c330b50ffbe818a343f8dcf3226b49/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d4769744875622d77686974653f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d626c61636b)
