@@ -21,8 +21,8 @@ Click [here](https://main--apps124.netlify.app/) to try out the app.
   - AAU, I want to be able to delete apps that I have added so that I can remove items that I don't want associated with my profile. 
 ---
 # *Stretch Goals*
- - [ ] AAU I want to be able to view all profiles and profile details so that I can learn more about other users. 
- - [ ] AAU, when view the profile details page, I want to see all of the apps that have been added by that profile in chronological order by date created. 
+- [ ] AAU I want to be able to view all profiles and profile details so that I can learn more about other users. 
+- [ ]  AAU, when view the profile details page, I want to see all of the apps that have been added by that profile in chronological order by date created. 
 - [ ] AAU, I want to be able to update my profile so that I can change my name and profile photo. 
 - [ ] AAU, I want to be able to delete my profile so that I have control over whether or not my profile exists within the app.
 - [ ] AAU, I want to be able to update my app so that I can change the images and data associated with it as the app changes. 
@@ -54,8 +54,7 @@ Click [here](https://main--apps124.netlify.app/) to try out the app.
 ![Trello](https://camo.githubusercontent.com/53464818761dd2ff83cdeb2f01718cab329e9835d4a55a50ade0c15dca69c71f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d5472656c6c6f2d77686974653f7374796c653d666f722d7468652d6261646765266c6f676f3d5472656c6c6f266c6f676f436f6c6f723d626c61636b)
 ---
 # *Screenshots*
-screenshot
-![](https://i.imgur.com/AOBbOf7.png)
+![Landing page](https://i.imgur.com/AOBbOf7.png)
 
 ---
 # *Credits* 
