@@ -145,5 +145,5 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active{
     -webkit-box-shadow: 0 0 0 30px rgb(12, 11, 11)  inset !important;
-    -webkit-color: rgb(25, 107, 19);
+    color: rgb(25, 107, 19);
 }
